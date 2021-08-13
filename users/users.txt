@@ -1,0 +1,9 @@
+16:26:06	INSERT INTO users(first_name, last_name, email) VALUES('Payton','Fronczak','paytonfronczak@gmail.com')	1 row(s) affected	0.016 sec
+16:27:48	INSERT INTO users(first_name, last_name, email) VALUES('Emily', 'Garvie', 'emilygarvie@gmail.com')	1 row(s) affected	0.015 sec
+16:28:27	INSERT INTO users(first_name, last_name, email) VALUES('Kathy', 'Fronczak', 'pixieduststudio@cox.com')	1 row(s) affected	0.015 sec
+16:29:03	SELECT * FROM users_schema.users LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+16:30:58	SELECT email FROM users_schema.users WHERE (id = '1') LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+16:37:40	SELECT first_name, last_name, email FROM users WHERE id = (SELECT MAX(id) FROM users) LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+16:53:05	UPDATE users  SET last_name = 'pancakes' WHERE (id = '3')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.000 sec
+16:56:08	DELETE FROM users WHERE (id ='2')	1 row(s) affected	0.016 sec
+16:58:45	SELECT first_name, last_name, id FROM users ORDER BY first_name LIMIT 0, 1000	2 row(s) returned	0.000 sec / 0.000 sec
